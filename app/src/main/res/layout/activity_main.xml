@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="jessie_stam.jessiestam_pset6_desktop.MainActivity"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#459462">
+
+            <TextView
+                android:text="TBR Jar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/app_title"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"/>
+        </FrameLayout>
+
+        <TextView
+            android:text="Don't know what to read next? Reach in your to-be-read jar and draw out the title of your next read! Of course you can save the books you still want to read and your favorites, so you will never find yourself without a story to devour."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColor="#000000"
+            android:padding="20dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <Button
+                android:text="Sign up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                android:layout_weight="0.45"
+                android:background="#63d48d"
+                android:onClick="signUp"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10" />
+
+            <Button
+                android:text="Log in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button3"
+                android:layout_weight="0.45"
+                android:background="#91e0af"
+                android:onClick="logIn"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1034285844134",
+    "firebase_url": "https://jessiestam-pset6.firebaseio.com",
+    "project_id": "jessiestam-pset6",
+    "storage_bucket": "jessiestam-pset6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034285844134:android:7f7192aa9f218eab",
+        "android_client_info": {
+          "package_name": "jessie_stam.jessiestam_pset6_desktop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034285844134-pk99hupmnckoc34st2moll9c7lfjnrhv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jessie_stam.jessiestam_pset6_desktop",
+            "certificate_hash": "EBE8F4898548AA8AE0489CBFD87E12C024305DC0"
+          }
+        },
+        {
+          "client_id": "1034285844134-bkddc0shvt09u523qd9i6mrqfaurjufr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_ZYBEtB5hLDPfaVDg5-BCMSRWqXMAm4g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034285844134-bkddc0shvt09u523qd9i6mrqfaurjufr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
