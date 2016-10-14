@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
  * Created by Jessie on 13-10-2016.
  */
 
-public class EmailPasswordActivity extends MainActivity{
+public class EmailPasswordActivity extends MainActivity implements View.OnClickListener {
 
     String title;
     String instr;
@@ -70,9 +70,11 @@ public class EmailPasswordActivity extends MainActivity{
         password_field = (EditText) findViewById(R.id.password_input);
         confirm_field = (EditText) findViewById(R.id.password_confirm_input);
 
-        if (confirm_pass.equals("invisible")) {
+        if (!confirm_pass.equals("visible")) {
             confirm_field.setVisibility(View.GONE);
         }
+
+        mAuth = FirebaseAuth.getInstance();
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -90,8 +92,6 @@ public class EmailPasswordActivity extends MainActivity{
                 // [END_EXCLUDE]
             }
         };
-
-
     }
 
     @Override
@@ -206,7 +206,7 @@ public class EmailPasswordActivity extends MainActivity{
             status.setText(getString(R.string.emailpassword_status_fmt, user.getEmail()));
             detail.setText(getString(R.string.firebase_status_fmt, user.getUid()));
 
-            findViewById(R.id.signUpButton).setVisibility(View.GONE);
+            findViewById(R.id.sign_up_button).setVisibility(View.GONE);
             email_field.setVisibility(View.GONE);
             password_field.setVisibility(View.GONE);
 
@@ -218,7 +218,7 @@ public class EmailPasswordActivity extends MainActivity{
             status.setText(R.string.signed_out);
             detail.setText(null);
 
-            findViewById(R.id.signUpButton).setVisibility(View.VISIBLE);
+            findViewById(R.id.sign_up_button).setVisibility(View.VISIBLE);
             email_field.setVisibility(View.VISIBLE);
             password_field.setVisibility(View.GONE);
 
